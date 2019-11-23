@@ -8,6 +8,12 @@
 	</parent>
 	<artifactId>example-eureka-client-user-service</artifactId>
 	<dependencies>
+		<!-- common依赖 -->
+		<dependency>
+			<groupId>com.example</groupId>
+			<artifactId>example-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		<!-- web应用 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
