@@ -47,5 +47,6 @@
 		<module>example-eureka-client-user-service</module>
 		<module>example-eureka-client-consumer-user-service</module>
 		<module>example-eureka-client-consumer-service</module>
+		<module>example-ribbon</module>
 	</modules>
 </project>
