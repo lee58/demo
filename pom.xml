@@ -45,5 +45,7 @@
 		<module>example-spring-boot-starter2</module>
 		<module>example-eureka-server</module>
 		<module>example-eureka-client-user-service</module>
+		<module>example-eureka-client-consumer-user-service</module>
+		<module>example-eureka-client-consumer-service</module>
 	</modules>
 </project>
