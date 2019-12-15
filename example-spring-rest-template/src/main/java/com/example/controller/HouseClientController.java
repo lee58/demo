@@ -70,4 +70,37 @@ public class HouseClientController {
 		}
 		return null;
 	}
+	
+	/**
+	 * 4、使用postForObject保存数据
+		@Description 
+		@return
+		@author 大都督
+		@date 2019年12月15日
+	 */
+	@GetMapping("/call/save")
+	public Long add() {
+		HouseInfo houseInfo = new HouseInfo(100L, "北京市", "北京市", "昌平区");
+		String url = "http://127.0.0.1:8081/house/save";
+		Long id = restTemplate.postForObject(url, houseInfo, Long.class);
+		return id;
+	}
+	
+	/**
+	 * 5、服务名称方式调用
+	 * 
+	 * @Description
+	 * @param name
+	 * @return
+	 * @author 大都督
+	 * @date 2019年11月25日
+	 */
+	@GetMapping("/call/getDataByService")
+	public HouseInfo getDataByService(@RequestParam("name") String name) {
+		// 请求的api地址，一种是：字符串；另一种是：URI
+		String url = "http://example-spring-rest-template/house/data?name=" + name;
+		// 返回的数据类型
+		Class<HouseInfo> responseType = HouseInfo.class;
+		return restTemplate.getForObject(url, responseType);
+	}
 }
