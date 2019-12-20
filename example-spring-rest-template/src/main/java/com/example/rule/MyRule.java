@@ -7,7 +7,7 @@ import com.netflix.loadbalancer.IRule;
 import com.netflix.loadbalancer.Server;
 
 /**
- * 自定义负载策略
+ * 7、自定义负载策略
 	@Description 
 	@author 大都督
 	@date 2019年12月20日
